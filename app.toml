@@ -96,7 +96,7 @@ enable = false
 # Swagger defines if swagger documentation should automatically be registered.
 swagger = false
 # Address defines the API server to listen on.
-address = "tcp://127.0.0.1:17717"
+address = "tcp://127.0.0.1:1717"
 # MaxOpenConnections defines the number of maximum open connections.
 max-open-connections = 1000
 # RPCReadTimeout defines the Tendermint RPC read timeout (in seconds).
