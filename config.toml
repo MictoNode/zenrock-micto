@@ -11,7 +11,7 @@
 # or the name of an ABCI application compiled in with the CometBFT binary
 proxy_app = "tcp://127.0.0.1:26658"
 # A custom human readable name for this node
-moniker = "MictoNode"
+moniker = ""
 p2p_recv_rate = 512000000
 p2p_send_rate = 512000000
 # If this node is many blocks behind the tip of the chain, BlockSync
@@ -356,7 +356,7 @@ discard_abci_responses = false
 #               - When "kv" is chosen "tx.height" and "tx.hash" will always be indexed.
 #   3) "psql" - the indexer services backed by PostgreSQL.
 # When "kv" or "psql" is chosen "tx.height" and "tx.hash" will always be indexed.
-indexer = "null"
+indexer = "kv"
 # The PostgreSQL connection configuration, the connection format:
 #   postgresql://<user>:<password>@<host>:<port>/<db>?<opts>
 psql-conn = ""

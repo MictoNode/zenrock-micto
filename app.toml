@@ -11,7 +11,7 @@ minimum-gas-prices = "0urock"
 # nothing: all historic states will be saved, nothing will be deleted (i.e. archiving node)
 # everything: 2 latest states will be kept; pruning at 10 block intervals.
 # custom: allow pruning options to be manually specified through 'pruning-keep-recent', and 'pruning-interval'
-pruning = "custom"
+pruning = "default"
 # These are applied if and only if the pruning strategy is custom.
 pruning-keep-recent = "100"
 pruning-interval = "10"
@@ -92,7 +92,7 @@ global-labels = [
 ###############################################################################
 [api]
 # Enable defines if the API server should be enabled.
-enable = true
+enable = false
 # Swagger defines if swagger documentation should automatically be registered.
 swagger = false
 # Address defines the API server to listen on.
@@ -137,7 +137,7 @@ denom-to-suggest = "uatom"
 ###############################################################################
 [grpc]
 # Enable defines if the gRPC server should be enabled.
-enable = true
+enable = false
 # Address defines the gRPC server address to bind to.
 address = "0.0.0.0:9790"
 # MaxRecvMsgSize defines the max message size in bytes the server can receive.
